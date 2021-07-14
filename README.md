@@ -25,7 +25,7 @@ Content-Type: application/json
 
 - ### Update existing item
 
-```
+```http request
 PUT http://localhost:8080/sukuas/update
 Content-Type: application/json
 ```
@@ -43,7 +43,7 @@ Content-Type: application/json
 
 - ### Add another item
 
-```
+```http request
 POST http://localhost:8080/orders/add
 Content-Type: application/json
 ```
