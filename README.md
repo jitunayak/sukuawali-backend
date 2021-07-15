@@ -41,7 +41,7 @@ Content-Type: application/json
 }
 ```
 
-- ### Place an order
+- ### Place a new order
 
 ```http request
 POST http://localhost:8080/orders/add
@@ -53,6 +53,7 @@ Content-Type: application/json
   "location": "Patia",
   "items": [
     {
+      "id": 1,
       "name": "White leg prawn",
       "description": "Super delicious",
       "price": 490,
@@ -63,4 +64,8 @@ Content-Type: application/json
   "deliveryCharges": 30,
   "totalAmount": 500
 }
+```
+- ### Order delivered
+```http request
+PUT http://localhost:8080/orders/delivered/{id}
 ```
