@@ -41,7 +41,7 @@ Content-Type: application/json
 }
 ```
 
-- ### Add another item
+- ### Place an order
 
 ```http request
 POST http://localhost:8080/orders/add

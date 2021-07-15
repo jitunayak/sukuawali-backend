@@ -8,7 +8,7 @@ import javax.persistence.Id;
 @Entity
 public class Sukua {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     Long id;
     String name;
     String description;
