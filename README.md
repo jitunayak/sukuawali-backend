@@ -65,7 +65,38 @@ Content-Type: application/json
   "totalAmount": 500
 }
 ```
+
 - ### Order delivered
+
 ```http request
 PUT http://localhost:8080/orders/delivered/{id}
 ```
+
+- ### User registration
+
+```http request
+PUT http://localhost:8080/users/register
+Content-Type: application/json
+```
+
+```json
+{
+  "username": "ultra2",
+  "password": "ultra2",
+  "isActive": true,
+  "roles": [
+    {
+      "role": "USER"
+    },
+    {
+      "role": "ADMIN"
+    }
+  ]
+}
+
+```
+```http request
+DELETE http://localhost:8080/users/delete/{user_id}
+```
+
+#### Only ADMIN can add new users && DELIVERY_GUY can complete the delivery
