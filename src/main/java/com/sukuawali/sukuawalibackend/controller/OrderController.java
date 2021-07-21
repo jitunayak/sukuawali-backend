@@ -19,8 +19,8 @@ public class OrderController {
         return new ResponseEntity(orderService.AddeOrder(order), HttpStatus.ACCEPTED);
     }
 
-    @PutMapping (path = "/delivered/{id}")
-    public ResponseEntity<Order> OrderDelivered(@PathVariable Long id) {
+    @PutMapping (path = "/delivered/")
+    public ResponseEntity<Order> OrderDelivered(@RequestParam Long id) {
         return new ResponseEntity(orderService.OrderDelivered(id), HttpStatus.ACCEPTED);
     }
 }
